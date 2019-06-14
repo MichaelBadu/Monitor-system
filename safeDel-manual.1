@@ -1,0 +1,61 @@
+.TH SAFEDEL
+.SH NAME
+safeDel \- trash can folder for useless files/directories 
+.SH SYNOPSIS
+.B safeDel
+[\fIOPTION\fR]... \fIcommand option\fR
+.SH DESCRIPTION
+.B safeDel
+is a recycle bin that stores the files and folder which have been terminated from the system. The purpose of the script is to provide an option for the user to permanently delete the contents in the trashcan. The user can also access SafeDel script by the use of direct commands or the menu display in the terminal interface. One can configure a list of folders and file types that are in order to send to the trashcan, if they delete them. Also, if there is the recover functionality, which enables one to be able to be able to recover the file, by entering into the trashCan, identifying the file to be recovered, and then use the recover.
+
+.SS OPTIONS
+.TP
+\-l 
+Outlines all the contents of trash can folder
+.TP
+\-r \fIfile/directory\fR
+Recover the files or directories from the trash can to it's actual folder or specified folder
+.TP
+\-d
+Permanently deletes a files/folders existing in the trash can 
+.TP
+\-t
+Shows the total usage of the trash can folder in Bytes
+.TP
+\-m
+Tracks and displays amendments done in the trash can directory.
+.TP
+\-k
+Kill/stops all the processes running in the trash can.
+.SH EXAMPLES
+.SS Direct command
+.TP 
+List the contents of the trashCan folder:
+.B safeDel.sh
+\-l
+.TP
+Recover the file named test.txt from the trash can:
+.B safeDel.sh
+\-r test.txt
+.TP
+Delete a particular file/files from the trash can folder:
+.B safeDel.sh
+\-d
+.TP
+Check the current total usage of the trashCan directory:
+.B safeDel.sh
+\-t
+.TP 
+Kill the current running process of the safeDels script:
+.B safeDel.sh
+\-k
+.SS Menu Options
+.TP
+To access the menu options: 
+.B sh safeDel.sh
+.TP
+This will show menu options on the terminal and the user can select the desired option from the menu by entering the number associated with that option.:browse confirm wa
+
+.SH AUTHOR
+Written by Michael Kofi Badu
+

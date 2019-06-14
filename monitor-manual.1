@@ -1,0 +1,36 @@
+.TH MONITOR 1
+.SH NAME
+monitor \- to monitor the creation, change and deletion of ordinary files in the user’s
+trashCan directory.
+.SH SYNOPSIS
+.B monitor.sh
+[ -s | -k ]
+.SH DESCRIPTION
+.B safeDel.sh
+to monitor the creation, amendments and deletion of  files in the user’s
+trashCan directory and then updates the informations within 15seconds span
+
+.SS OPTIONS
+.TP
+\-s
+initiates a monitoring process.
+
+.TP
+\-k
+terminate existing monitoring process.
+
+.SH EXAMPLES
+.TP
+Starting a new monitor process
+.B monitor.sh
+-s
+
+.TP
+Delete the new monitor process
+.B monitor.sh
+-k
+
+
+.SH AUTHOR
+Written by Michael Kofi Badu 
+
